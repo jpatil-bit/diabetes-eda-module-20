@@ -78,6 +78,7 @@ https://github.com/jpatil-bit/diabetes-eda-module-20/blob/main/data/diabetic_dat
 ########## **EDA , Data ** ##########
 1. The model incorporates demographic, hospital utilization, admission context, and treatment-related features to capture both baseline risk and clinical complexity. Engineered variables such as age midpoint and medication change count enhance interpretability and predictive strength. Together, these features allow the model to effectively distinguish patients at higher risk of 30-day readmission while avoiding data leakage from identifiers.
 2. The model uses a combination of demographic, clinical, hospital utilization, and treatment-related features to predict 30-day hospital readmission risk among diabetic patients.
+3. Diabetic patients with complex hospital stays, unstable medication regimens, prior admissions, and emergency-based care pathways are most likely to be readmitted within 30 days.
 ---
 
 ##  Visualizations
