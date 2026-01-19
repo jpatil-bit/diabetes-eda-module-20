@@ -8,11 +8,9 @@ The data contains such attributes as patient number, race, gender, age, admissio
 
 ## Project Overview
 
-This project focuese on performan an EDA on the dataset related to the coupon acceptance.
-The goal is to analyse the dataset and understand the patterns for the coupon acceptance.
-Focus is to study the Bar and Coffee coupon acceptance.
-Analysis includes examing how **age** , **weather** , **income** , **temperature** , **coupon expiration** ,**marital status** and others impact the coupon acceptance rate.
-Visualizations such as **bar plots** are used to gain insights from the data.
+The data shows that early hospital readmission among diabetic patients is driven by a combination of age, hospital utilization intensity, medication instability, and admission context. 
+While no single variable explains readmission risk, their combined effect creates predictable patterns. Feature engineering revealed that patients with longer stays, more procedures, and frequent medication changes are significantly more likely to be readmitted within 30 days. 
+A baseline Logistic Regression model confirmed that these risks can be quantified using ROC-AUC, supporting the idea that early readmission is not random but a measurable outcome that can inform proactive care planning and resource allocation.
 
 ---
 
@@ -30,21 +28,33 @@ Visualizations such as **bar plots** are used to gain insights from the data.
 https://github.com/jpatil-bit/diabetes-eda-module-20/blob/main/data/diabetic_data.csv
 
 ### Key Features:
-**destination**
-**passanger**
-**weather**
-**temperature**
-**coupon**	
-**expiration**
-**gender**
-**age**
-**maritalStatus**
-**has_children	education**
-**occupation**
-**income	car**
-**Bar**
-**CoffeeHouse**
-**Y** Where 1 means accepted and 0 implies rejected.
+* Age
+* Gender
+* Race
+* Time in hospital
+* Number of laboratory procedures
+* Number of procedures
+* Number of medications
+* Admission type
+* Admission source
+* Discharge disposition
+* Number of inpatient visits
+* Number of emergency visits
+* Number of outpatient visits
+* Insulin usage
+* Diabetes medication indicators
+* Medication change count
+* Age midpoint (numeric transformation of age ranges)
+* Medication change count
+* Binary readmission indicator (readmitted within 30 days)
+
+  Excluded Features (to prevent data leakage)
+
+* Patient identifiers (encounter ID, patient number)
+
+* Original readmission category column
+
+
 
 
 ---
