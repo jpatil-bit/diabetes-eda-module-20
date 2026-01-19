@@ -12,6 +12,11 @@ The data shows that early hospital readmission among diabetic patients is driven
 While no single variable explains readmission risk, their combined effect creates predictable patterns. Feature engineering revealed that patients with longer stays, more procedures, and frequent medication changes are significantly more likely to be readmitted within 30 days. 
 A baseline Logistic Regression model confirmed that these risks can be quantified using ROC-AUC, supporting the idea that early readmission is not random but a measurable outcome that can inform proactive care planning and resource allocation.
 
+## What problem we are solving 
+
+
+This analysis demonstrates how historical hospital data can be used to identify diabetic patients at elevated risk of early readmission. Such insights can support targeted follow-up care, medication review, and discharge planning, ultimately reducing avoidable readmissions and improving patient outcomes.
+
 ---
 
 ## Tools and Libraries Used
@@ -54,6 +59,12 @@ https://github.com/jpatil-bit/diabetes-eda-module-20/blob/main/data/diabetic_dat
 
 * Original readmission category column
 
+## Modeling
+
+* Baseline: Logistic Regression with class weighting (good transparent baseline).
+
+## Metric: 
+* Confusion matrix for interpretability.
 
 
 
@@ -64,19 +75,9 @@ https://github.com/jpatil-bit/diabetes-eda-module-20/blob/main/data/diabetic_dat
 
 [https://github.com/jpatil-bit/customer-coupon/blob/main/customer_coupon_eda.ipynb](https://github.com/jpatil-bit/diabetes-eda-module-20/blob/main/predict-diabetes.ipynb)
 
-########## **Hypothesize about drivers who accepted the bar coupons** ##########
-1. Coupon rejection is more than coupon acceptance. 
-2. Coupon acceptance rate is 56.8% , out of which 41.00% is the Bar coupon acceptance. 
-3. Drivers over the age of 25 visit bars more frequently (more than once a month) compared to younger age groups.. 
-4. Drivers with no kids and not in the occupation of farming, fishing, or forestry visit bars more frequently than parents in others.. 
-5. Drivers with age <30 and income <50k , with passanger having no kids , not widowed , visits bar more frequently and visits restaurant < $20 4-8 times a months
-   
-########## **Hypothesize about drivers who accepted the coffee coupons** ##########
-1. Coffee coupon acceptance rate is 49.92%. 
-2. Sunny day with temperature of 30 F has more acceptance. 
-3. 26 years old singles and 36 years old unmarried partner has more acceptance of coffee coupons. 
-4. Male driving to non urgent destination has more acceptance than others. 
-
+########## **EDA , Data ** ##########
+1. The model incorporates demographic, hospital utilization, admission context, and treatment-related features to capture both baseline risk and clinical complexity. Engineered variables such as age midpoint and medication change count enhance interpretability and predictive strength. Together, these features allow the model to effectively distinguish patients at higher risk of 30-day readmission while avoiding data leakage from identifiers.
+2. The model uses a combination of demographic, clinical, hospital utilization, and treatment-related features to predict 30-day hospital readmission risk among diabetic patients.
 ---
 
 ##  Visualizations
