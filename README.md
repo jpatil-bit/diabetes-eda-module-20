@@ -5,6 +5,7 @@
 
 The data contains such attributes as patient number, race, gender, age, admission type, time in hospital, medical specialty of admitting physician, number of lab tests performed, HbA1c test result, diagnosis, number of medications, diabetic medications, number of outpatient, inpatient, and emergency visits in the year before the hospitalization, etc.
 
+
 ## Project Overview
 
 This project focuese on performan an EDA on the dataset related to the coupon acceptance.
@@ -26,7 +27,7 @@ Visualizations such as **bar plots** are used to gain insights from the data.
 ---
 
 ## Dataset
-https://github.com/jpatil-bit/customer-coupon/blob/main/data/coupons.csv
+https://github.com/jpatil-bit/diabetes-eda-module-20/blob/main/data/diabetic_data.csv
 
 ### Key Features:
 **destination**
@@ -51,7 +52,7 @@ https://github.com/jpatil-bit/customer-coupon/blob/main/data/coupons.csv
 ##  Analysis and hypothesis
 *** Jupyter file containes all the EDA's and plots ***
 
-https://github.com/jpatil-bit/customer-coupon/blob/main/customer_coupon_eda.ipynb
+[https://github.com/jpatil-bit/customer-coupon/blob/main/customer_coupon_eda.ipynb](https://github.com/jpatil-bit/diabetes-eda-module-20/blob/main/predict-diabetes.ipynb)
 
 ########## **Hypothesize about drivers who accepted the bar coupons** ##########
 1. Coupon rejection is more than coupon acceptance. 
@@ -87,4 +88,5 @@ Ensure you have Python 3.x installed and the necessary dependencies:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/jpatil-bit/customer-coupon.git
+
+   git clone https://github.com/jpatil-bit/diabetes-eda-module-20.git
